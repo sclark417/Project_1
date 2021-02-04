@@ -1,116 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feedeorology</title>
     <!-- Compiled and minified CSS Materialize-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
 
     <!-- icon links -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="./assets/css/style.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/style.css" rel="stylesheet" />
 
     <!-- favicon information -->
-    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+  </head>
 
-</head>
-
-
-
-<body class="light-blue lighten-5">
-
+  <body class="light-blue lighten-5">
     <nav>
-        <div class="nav-wrapper light-blue darken-4">
-            <a href="#!" class="brand-logo center"><i class="material-icons">cloud</i>Feedeorology</a>
-
-        </div>
+      <div class="nav-wrapper light-blue darken-4">
+        <a href="#!" class="brand-logo center"
+          ><i class="material-icons">cloud</i>Feedeorology</a
+        >
+      </div>
     </nav>
 
     <nav>
-        <div class="nav-wrapper light-blue darken-3">
-            <form>
-                <div class="input-field">
-                    <input id="search" type="search" required>
-                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                    <i class="material-icons">close</i>
-                </div>
-            </form>
-        </div>
+      <div class="nav-wrapper light-blue darken-3">
+        <form>
+          <div class="input-field">
+            <input id="search" type="search" required />
+            <label class="label-icon" for="search"
+              ><i class="material-icons">search</i></label
+            >
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+      </div>
     </nav>
 
+    <div class="container">
+      <div class="row">
+        <div id="selectors"></div>
+      </div>
+    </div>
+    <br />
 
     <div class="container">
-
-        <div class="row">
-            <div id="selectors">
-
-
-            </div>
-
+      <div class="row">
+        <div class="card col m5 s12 mirror">
+          <class class="card">
+            <div class="card" id="current-forecast"></div>
+          </class>
         </div>
-    </div>
-    <br>
 
-    <div class="container">
-
-        <div class="row">
-
-            <div class="card col m5 s12 mirror">
-                <class class="card">
-                    <div class="card" id='current-forecast'></div>
-
-                </class>
-
+        <div class="card col m6 s12 mirror" id="recipes">
+          <h2>Recipes:</h2>
+          <div class="card Ext-Card">
+            <div class="card Int-Card">
+              <h1>Recipes:</h1>
+              <div class="card Ext-Card">
+                <div class="card Int-Card"></div>
+              </div>
             </div>
-
-            <div class="card col m6 s12 mirror" id="recipes">
-
-                <h2>Recipes:</h2>
-                <div class="card Ext-Card">
-                    <div class="card Int-Card">
-
-                        <h1>Recipes:</h1>
-                        <div class="card Ext-Card">
-                            <div class="card Int-Card">
-
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-
+          </div>
         </div>
+      </div>
     </div>
-
 
     <footer class="page-footer light-blue darken-3">
-
-        <div class="footer-copyright light-blue darken-4">
-            <div class="container">
-                © 2021 Copyright Feedeorology
-            </div>
-        </div>
+      <div class="footer-copyright light-blue darken-4">
+        <div class="container">© 2021 Copyright Feedeorology</div>
+      </div>
     </footer>
-
-
-
-
-
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!-- jQuery JAvascript link-->
+    <!-- jQuery Javascript link-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- weather api javascript -->
@@ -118,7 +90,5 @@
 
     <!-- edemam api javascript -->
     <script src="./assets/js/food.js"></script>
-
-</body>
-
+  </body>
 </html>
